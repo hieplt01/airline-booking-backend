@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Query } from '@nestjs/common';
 import { LoadImagesService } from './load-images.service';
 import { ApiOkResponse } from '@nestjs/swagger';
 import { ImageResultDTO } from './load-images.dto';
@@ -12,7 +12,7 @@ export class LoadImagesController {
         description: "Get list images",
         type: ImageResultDTO
     })
-    imagesForLazyLoad() {
-        return this.loadImageService.getImages();
+    imagesForLazyLoad(@Query('page') page = 1, @Query('limit') limit = 7) {
+        return this.loadImageService.getImages(page,limit);
     }
 }

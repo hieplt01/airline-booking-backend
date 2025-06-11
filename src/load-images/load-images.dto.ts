@@ -18,6 +18,12 @@ export class ImageResultDTO {
     @ApiProperty({ example: '1' })
     total: number;
 
+    @ApiProperty({ example: '1' })
+    page: number;
+
+    @ApiProperty({ example: '1' })
+    limit: number;
+
     @ApiProperty({ type: [ImageDto] })
     data: ImageDto[];
 }
