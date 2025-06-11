@@ -1,0 +1,58 @@
+[
+    {
+        "country": "JAPAN",
+        "countryCode": "JPN",
+        "departureAirport": [
+            {
+                "name": "Akita",
+                "code": "AXT"
+            },
+            {
+                "name": "Aomori",
+                "code": "AOJ"
+            },
+            {
+                "name": "Hiroshima",
+                "code": "HIJ"
+            },
+            {
+                "name": "Nagasaki",
+                "code": "NGS"
+            },
+            {
+                "name": "Osaka (Itami)",
+                "code": "ITM"
+            },
+            {
+                "name": "Tokyo (All)",
+                "code": "TYO"
+            }
+        ],
+        "arrivalAirport": [
+            {
+                "name": "Akita",
+                "code": "AXT"
+            },
+            {
+                "name": "Aomori",
+                "code": "AOJ"
+            },
+            {
+                "name": "Hiroshima",
+                "code": "HIJ"
+            },
+            {
+                "name": "Nagasaki",
+                "code": "NGS"
+            },
+            {
+                "name": "Osaka (Itami)",
+                "code": "ITM"
+            },
+            {
+                "name": "Tokyo (All)",
+                "code": "TYO"
+            }
+        ]
+    }
+]
