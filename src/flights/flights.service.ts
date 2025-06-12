@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ListAirportDTO } from './dto/departure.dto';
 import * as fs from 'fs';
+import { FlightDto } from './dto/search.dto';
 
 @Injectable()
 export class FlightsService {
@@ -40,5 +41,23 @@ export class FlightsService {
       list: filtered
     }
     return data;
+  }
+
+  listFlights(from: string, to: string, tripType: string) {
+    const filePath = 'src/flights/mockFlights.json';
+    const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    let data;
+    for (var i of jsonData) {
+      if (i.type == tripType) {
+        data = i.data;
+      }
+    }
+    let result = [];
+    data.forEach(el => {
+      if (el.departureAirport == from && el.arrivalAirport == to) {
+        result.push(el);
+      }
+    })
+    return result;
   }
 }

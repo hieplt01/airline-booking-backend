@@ -1,6 +1,6 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Query } from '@nestjs/common';
 import { FlightsService } from './flights.service';
-import { ApiOkResponse } from '@nestjs/swagger';
+import { ApiOkResponse, ApiQuery } from '@nestjs/swagger';
 import { ListAirportDTO } from './dto/departure.dto';
 import { getArrivalDTO, getDepartureDTO } from './dto/body.dto';
 
@@ -25,6 +25,22 @@ export class FlightsController {
   })
   listArrivalAirport(@Body() body: getArrivalDTO) {
     return this.flightsService.listArrival(body);
+  }
+
+  @Get('search')
+  @ApiQuery({ name: 'from', required: false, type: String, example: 'SFO' })
+  @ApiQuery({ name: 'to', required: false, type: String, example: 'NRT' })
+  @ApiQuery({ name: 'adults', required: false, type: Number, example: 1 })
+  @ApiQuery({ name: 'minors', required: false, type: Number, example: 1 })
+  @ApiQuery({ name: 'tripType', required: false, type: String, example: 'one-way' })
+  @ApiQuery({ name: 'departDate', required: false, type: Date, example: '2025-06-12' })
+  @ApiQuery({ name: 'returnDate', required: false, type: Date, example: '2025-07-23' })
+  getListFlights(
+    @Query('from') from = 'SFO',
+    @Query('to') to = 'NRT',
+    @Query('tripType') type = 'one-way'
+  ) {
+    return this.flightsService.listFlights(from, to, type);
   }
 
 }

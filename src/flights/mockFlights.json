@@ -1,0 +1,124 @@
+[
+  {
+    "type": "round-trip",
+    "data": [
+        {
+            "id": "1",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "round-trip"
+        },
+        {
+            "id": "2",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "round-trip"
+        },
+        {
+            "id": "3",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "round-trip"
+        },
+        {
+            "id": "4",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "round-trip"
+        }
+    ]
+  },
+  {
+    "type": "one-way",
+    "data": [
+      {
+            "id": "1",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "one-way"
+        },
+        {
+            "id": "2",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "one-way"
+        },
+        {
+            "id": "3",
+            "airline": "Japan Airlines",
+            "airlineCode": "JL",
+            "logo": "🔴",
+            "duration": "18h 22m",
+            "departureTime": "7:35 AM",
+            "arrivalTime": "12:15 PM",
+            "departureAirport": "SFO",
+            "arrivalAirport": "NRT",
+            "stops": 1,
+            "stopDuration": "50m",
+            "stopLocation": "HKG",
+            "price": 663,
+            "type": "one-way"
+        }
+    ]
+  }
+]
